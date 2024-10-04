@@ -12,12 +12,7 @@ addBookBtn.addEventListener('click', (event) => {
     
 })
 
-const myLibrary = [
-    // {
-
-    // }
-    // 'Of Mice and Men','Tuesdays with Morrie', 'First Lie Wins', 'Devil Wears Prada'
-];
+const myLibrary = [];
 
 function Book(title, author, pages, read) {
     this.title = title;
