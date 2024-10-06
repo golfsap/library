@@ -8,34 +8,44 @@
     <script src="library.js" defer></script>
 </head>
 <body>
+    <div id="header">
+        <h1>Library</h1>
+        <p>Welcome to the library. Track your favorite books here</p>
+        <button class="btn" id="new-book">New Book</button>
+    </div>
     <div class="library-container">
         <div class="book-shelf" id="shelf-1">
-            <div class="book">
+            <div class="book" data-book-number="1">
                 <div class="book-title">Hello World</div>
                 <div class="book-author">by C++</div>
                 <div class="book-pages">26 pages</div>
-                <input type="checkbox" name="read" id="read" checked>
-                <label for="read">read</label>
+                <div>
+                    <input type="checkbox" name="read" id="read" checked>
+                    <label for="read">read</label>
+                </div>
+                <button class="btn" id="remove-book">Remove Book</button>
             </div>
         </div>
-        <div class="book-shelf"></div>
-        <div class="book-shelf"></div>
-        <div class="modal-container">
-            <form action="">
-                <p>Book Info</p>
-                <span>Please fill out the form to add book to the library</span>
-                <input type="text" name="title" id="title"  placeholder="Title">
-                <input type="text" name="author" id="author" placeholder="Author">
-                <input type="number" name="pages" id="pages" placeholder="Number of pages">
-                
-                <span>
-                    <input type="checkbox" name="read" id="hasRead" checked>
-                    <label for="read">Read</label>
-                </span>
-                
-                <button id="add-book">Add book</button>
-            </form>
-        </div>
+        <!-- <div class="book-shelf"></div>
+        <div class="book-shelf"></div> -->
+    </div>
+    <div class="modal-container toggle-modal" id="modal">
+        <form id="modal-form" action="">
+            <p>Book Info</p>
+            <span>Please fill out the form to add a book to the library</span>
+            <input type="text" name="title" id="title"  placeholder="Title">
+            <input type="text" name="author" id="author" placeholder="Author">
+            <input type="number" name="pages" id="pages" placeholder="Number of pages">
+            
+            <span>
+                <input type="checkbox" name="read" id="hasRead" checked>
+                <label for="read">Read</label>
+            </span>
+            <div>
+                <button class="btn" id="add-book">Add book</button>
+                <button class="btn" id="close-modal">Close</button>
+            </div>
+        </form>
     </div>
 </body>
 </html>
