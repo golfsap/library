@@ -1,3 +1,21 @@
+class Book {
+    constructor(title, author, pages, read) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+    }
+
+    toggleRead() {
+        if (this.read == true) {
+            this.read = false;
+        }
+        else {
+            this.read = true;
+        }
+    }
+}
+
 // UI elements
 const shelf = document.getElementById('shelf-1');
 const addBookBtn = document.getElementById('add-book');
@@ -47,24 +65,6 @@ document.addEventListener('click', (event) => {
 })
 
 const myLibrary = [];
-
-function Book(title, author, pages, read) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
-}
-
-Book.prototype.toggleRead = function() {
-    if (this.read == true) {
-        this.read = false;
-        console.log(this.read);
-    }
-    else {
-        this.read = true;
-        console.log(this.read);
-    }
-}
 
 function createNewBook() {
     // Add input validation: neg page numbers
