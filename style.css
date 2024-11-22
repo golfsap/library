@@ -1,177 +1,179 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Dosis", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Dosis", sans-serif;
 }
 
 body {
-    background-color: #fff;
-    /* background: linear-gradient(to right, #e2e2e2, #c9d6ff); */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
+  background-color: #fff;
+  /* background: linear-gradient(to right, #e2e2e2, #c9d6ff); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
 }
 
 #header {
-    /* border: 1px solid green; */
-    width: 500px;
-    /* width: 100%; */
-    /* align-self: stretch; */
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    /* gap: 5px; */
-    /* padding: 0 5px; */
+  /* border: 1px solid green; */
+  width: 500px;
+  /* width: 100%; */
+  /* align-self: stretch; */
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* gap: 5px; */
+  /* padding: 0 5px; */
 }
 
 #header button {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .library-container {
-    background-color: saddlebrown;
-    padding: 10px;
-    /* border: 1px solid black; */
-    /* border-radius: 30px; */
-    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35); */
-    position: relative;
-    width: 1100px;
-    /* max-width: 100%; */
-    height: 620px;
+  background-color: saddlebrown;
+  padding: 10px;
+  /* border: 1px solid black; */
+  /* border-radius: 30px; */
+  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35); */
+  position: relative;
+  width: 1100px;
+  /* max-width: 100%; */
+  height: 620px;
 }
 
 .book-shelf {
-    background-color: green;
-    /* background: linear-gradient(to right, #e2e2e2, #c9d6ff); */
-    /* border: 1px solid black; */
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-auto-rows: 200px;
-    height: 600px;
-    justify-items: center;
-    align-items: center;
+  background-color: green;
+  /* background: linear-gradient(to right, #e2e2e2, #c9d6ff); */
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 200px;
+  height: 600px;
+  justify-items: center;
+  align-items: center;
 }
 
 .book {
-    border: 1px solid black;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-    background-color: #fff;
-    width: 150px;
-    height: 180px;
-    margin: 5px;
-    border-radius: 3px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-
+  border: 1px solid black;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  background-color: #fff;
+  width: 150px;
+  height: 180px;
+  margin: 5px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .book-title {
-    font-weight: 600;
+  font-weight: 600;
 }
 
-.book-author, .book-pages, .book label {
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.3px;
+.book-author,
+.book-pages,
+.book label {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
 }
 
-.book-title, .book-author {
-    text-align: center;
+.book-title,
+.book-author {
+  text-align: center;
 }
 
 .book button {
-    padding: 3px 7px;
+  padding: 3px 7px;
 }
 
-.book input[type='checkbox'] {
-    /* border: 1px solid red; */
-    margin-right: 5px;
+.book input[type="checkbox"] {
+  /* border: 1px solid red; */
+  margin-right: 5px;
 }
 
 .modal-container {
-    position: absolute;
-    background-color: #fff;
-    /* top: 20%;
+  position: absolute;
+  background-color: #fff;
+  /* top: 20%;
     left: 25%; */
-    width: 50%;
-    width: 500px;
-    height: 330px;
-    z-index: 1000;
-    border: 1px solid black;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-    /* display: none; */
-    /* border-radius: 11px; */
+  width: 50%;
+  width: 500px;
+  height: 330px;
+  z-index: 1000;
+  border: 1px solid black;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  /* display: none; */
+  /* border-radius: 11px; */
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .modal-container form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0 40px;
-    /* border: 1px solid red; */
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+  /* border: 1px solid red; */
+  height: 100%;
 }
 
 .modal-container input:not([type="checkbox"]) {
-    background-color: #eee;
-    border: none;
-    margin: 8px 0;
-    padding: 10px 15px;
-    font-size: 13px;
-    outline: none;
-    /* border-radius: 8px; */
-    width: 100%;
+  background-color: #eee;
+  border: none;
+  margin: 8px 0;
+  padding: 10px 15px;
+  font-size: 13px;
+  outline: none;
+  /* border-radius: 8px; */
+  width: 100%;
 }
 
 .modal-container p {
-    font-weight: 600;
-    font-size: 17px;
+  font-weight: 600;
+  font-size: 17px;
 }
 
 .modal-container span {
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.3px;
-    margin: 9px 0;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  margin: 9px 0;
 }
 
 .btn {
-    font-size: 12px;
-    text-transform: uppercase;
-    background-color: transparent;
-    border: 1px solid #333;
-    padding: 5px;
-    /* border-radius: 8px; */
-    cursor: pointer;
-    font-weight: 400;
-    letter-spacing: 0.5px;
+  font-size: 12px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid #333;
+  padding: 5px;
+  /* border-radius: 8px; */
+  cursor: pointer;
+  font-weight: 400;
+  letter-spacing: 0.5px;
 }
 
 .modal-container .btn {
-    margin: 0 10px;
-    width: 110px;
+  margin: 0 10px;
+  width: 110px;
 }
 
 button.btn:hover {
-    background-color: #333;
-    color: #fff;
+  background-color: #333;
+  color: #fff;
 }
 
 .book button:hover {
-    border: 1px solid red;
-    background-color: transparent;
-    color: red;
+  border: 1px solid red;
+  background-color: transparent;
+  color: red;
 }
