@@ -7,6 +7,8 @@ The library is an array of books and the book themselves are class instances.
 
 First developed to practice using objects, object constructors and prototypes and then refactored slightly to make the Book a class instead.
 
+[Live demo](https://golfsap.github.io/library/)
+
 ## Screenshot 
 
 ![screenshot](/screenshot.png)
